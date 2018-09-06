@@ -59,7 +59,7 @@ class Student
               end
        end
 
-       def self.first_X_students_in_grade_10(size)
+       def self.first_X_students_in_grade_10(grade)
          #binding.pry
          sql = <<-SQL
                 SELECT COUNT(grade)
