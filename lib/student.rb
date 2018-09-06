@@ -64,7 +64,6 @@ class Student
                 SELECT *
                 FROM students
                 WHERE grade = 10
-                COUNT(grade)
               SQL
 
               DB[:conn].execute(sql).map do |row|
