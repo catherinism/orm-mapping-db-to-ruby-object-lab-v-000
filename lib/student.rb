@@ -61,11 +61,10 @@ class Student
 
        def self.first_X_students_in_grade_10(grade)
          sql = <<-SQL
-                SELECT grade,
+                SELECT grade = 10,
                 COUNT(grade)
                 FROM students
                 GROUP BY grade
-                WHERE grade = 10
               SQL
 
               DB[:conn].execute(sql, grade).map do |row|
