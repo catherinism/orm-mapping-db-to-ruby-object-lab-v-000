@@ -63,7 +63,7 @@ class Student
          sql = <<-SQL
                 SELECT *
                 FROM students,
-                COUNT(grade)
+                COUNT(grade),
                 WHERE grade = 10
               SQL
 
