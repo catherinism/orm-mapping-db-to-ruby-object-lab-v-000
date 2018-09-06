@@ -60,6 +60,7 @@ class Student
        end
 
        def self.first_X_students_in_grade_10(size)
+         binding.pry
          sql = <<-SQL
                 SELECT COUNT(*)
                 FROM students
